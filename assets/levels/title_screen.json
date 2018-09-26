@@ -1,0 +1,22 @@
+{
+  "assets": {
+    "background_image": {"type": "image", "source": "assets/images/background.png"}
+  },
+  "sprites": {
+    "background": {
+      "type": "sprite",
+      "position": {"x": 320, "y": 240},
+      "texture": "background_image"
+    },
+    "title_message": {
+      "type": "text",
+      "position": {"x": 20, "y": 100},
+      "style": {"font": "65px Minimal", "fill": "#000000"}
+    },
+    "start_message": {
+      "type": "text",
+      "position": {"x": 150, "y": 200},
+      "style": {"font": "20px Minimal", "fill": "#000000"}
+    }
+  }
+}

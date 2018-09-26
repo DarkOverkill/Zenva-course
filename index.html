@@ -22,10 +22,23 @@
           -ms-interpolation-mode: nearest-neighbor;    /* IE (non standard naming) */
           image-rendering: pixelated;                  /* Chrome 41 */
         }
+
+        @font-face {
+          font-family: 'Minimal';
+          src: url('assets/fonts/Minimal5x7.ttf')
+        }
+
+        .font-preload {
+          font-family: 'Minimal';
+          position: absolute;
+          left: -100px;
+        }
     </style>
 </head>
 
 <body style="background-color: black;">
+
+  <div class="font-preload">.</div>
     
 <script type="text/javascript" src="./dev/vendor.js"></script><script type="text/javascript" src="./dev/app.js"></script></body>
 </html>
