@@ -1,15 +1,15 @@
-class TitleScene extends Phaser.Scene {
+import JSONLevelScene from './JSONLevelScene';
+import Prefab from '../prefabs/Prefab';
+import TextPrefab from '../prefabs/TextPrefab';
+
+class TitleScene extends JSONLevelScene {
   constructor() {
-    super({ key: 'TitleScene' });
-  }
+    super('TitleScene');
 
-  preload() {
-    this.load.image('background_image', 'assets/background.png');
-  }
-
-  create() {
-    let background = this.add.sprite(0, 0, 'background_image');
-    background.setOrigin(0, 0);
+    this.prefab_classes = {
+      background: Prefab.prototype.constructor,
+      text: TextPrefab.prototype.constructor
+    }
   }
 }
 

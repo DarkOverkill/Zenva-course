@@ -2,21 +2,36 @@
   "assets": {
     "background_image": {"type": "image", "source": "assets/images/background.png"}
   },
+  "groups": [
+    "background",
+    "texts"
+  ],
   "sprites": {
     "background": {
-      "type": "sprite",
+      "type": "background",
       "position": {"x": 320, "y": 240},
-      "texture": "background_image"
+      "properties": {
+        "texture": "background_image",
+        "group": "background"
+      }
     },
     "title_message": {
       "type": "text",
       "position": {"x": 20, "y": 100},
-      "style": {"font": "65px Minimal", "fill": "#000000"}
+      "properties": {
+        "text": "Zenva course",
+        "style": {"font": "65px Minimal", "fill": "#ffc800"},
+        "group": "texts"
+      }
     },
     "start_message": {
       "type": "text",
       "position": {"x": 150, "y": 200},
-      "style": {"font": "20px Minimal", "fill": "#000000"}
+      "properties": {
+        "text": "click to start",
+        "style": {"font": "20px Minimal", "fill": "#ffc800"},
+        "group": "texts"
+      }
     }
   }
 }

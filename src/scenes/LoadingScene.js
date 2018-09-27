@@ -6,7 +6,7 @@ class LoadingScene extends Phaser.Scene {
   init(data) {
     this.level_data = data.level_data;
 
-    let loading_message = this.add.text(320, 240, 'Loading', { font: '48px Kells', fill: '#ffffff' });
+    let loading_message = this.add.text(320, 240, 'Loading', { font: '48px Minimal', fill: '#ffffff' });
   }
 
   preload() {
@@ -30,7 +30,7 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create() {
-    console.log('starting title scene');
+    this.scene.start('TitleScene', { level_data: this.level_data });
   }
 }
 
