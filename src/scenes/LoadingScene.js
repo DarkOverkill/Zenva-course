@@ -19,18 +19,22 @@ class LoadingScene extends Phaser.Scene {
           break;
         case 'spritesheet':
           this.load.spritesheet(asset_key, asset.source, {
-            frameWidth: asset.frame.width,
-            frameHeight: asset.frame.height,
+            frameWidth: asset.frame_width,
+            frameHeight: asset.frame_height,
             farmes: asset.frames,
             margin: asset.margin,
             spacing: asset.spacing
           });
+          break;
+        case 'tilemap':
+          this.load.tilemapTiledJSON(asset_key, asset.source);
+          break;
       }
     }
   }
 
-  create() {
-    this.scene.start('TitleScene', { level_data: this.level_data });
+  create(data) {
+    this.scene.start(data.scene, { level_data: this.level_data });
   }
 }
 

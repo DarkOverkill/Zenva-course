@@ -3,7 +3,8 @@ class BootScene extends Phaser.Scene {
     super({ key: 'BootScene' });
 
     this.levels = {
-      title: { key: 'TitleScene', path: 'assets/levels/title_screen.json' }
+      title: { key: 'TitleScene', path: 'assets/levels/title_screen.json' },
+      dungeon: { key: 'WorldScene', path: 'assets/levels/dungeon.json' }
     };
   }
 
@@ -14,9 +15,9 @@ class BootScene extends Phaser.Scene {
     }
   }
 
-  create(data) {
+  create(data) {  
     let level_data = this.cache.json.get(data.scene);
-    this.scene.start('LoadingScene', { level_data });
+    this.scene.start('LoadingScene', { level_data, scene: this.levels[data.scene].key });
   }
 }
 
