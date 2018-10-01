@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextobjectid="12">
- <tileset firstgid="1" source="tilesets.tsx"/>
+ <tileset firstgid="1" name="all_tilesets" tilewidth="32" tileheight="32" tilecount="3072" columns="64">
+  <image source="../images/tileset.png" width="2048" height="1536"/>
+ </tileset>
  <layer name="background" width="20" height="15">
   <properties>
-   <property name="tilset" value="map_tileset"/>
+   <property name="tileset" value="map_tileset"/>
   </properties>
   <data encoding="csv">
 906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
@@ -48,8 +50,7 @@
  </layer>
  <objectgroup name="objects">
   <properties>
-   <property name="group" value="players"/>
-   <property name="texture" value="player_spritesheet"/>
+   <property name="tileset" value="map_tileset"/>
   </properties>
   <object id="10" name="player" type="player" x="0" y="224" width="32" height="32">
    <properties>

@@ -8,11 +8,11 @@
          "opacity":1,
          "properties":
             {
-             "tilset":"map_tileset"
+             "tileset":"map_tileset"
             },
          "propertytypes":
             {
-             "tilset":"string"
+             "tileset":"string"
             },
          "type":"tilelayer",
          "visible":true,
@@ -69,13 +69,11 @@
          "opacity":1,
          "properties":
             {
-             "group":"players",
-             "texture":"player_spritesheet"
+             "tileset":"map_tileset"
             },
          "propertytypes":
             {
-             "group":"string",
-             "texture":"string"
+             "tileset":"string"
             },
          "type":"objectgroup",
          "visible":true,
@@ -89,8 +87,17 @@
  "tileheight":32,
  "tilesets":[
         {
+         "columns":64,
          "firstgid":1,
-         "source":"tilesets.tsx"
+         "image":"..\/images\/tileset.png",
+         "imageheight":1536,
+         "imagewidth":2048,
+         "margin":0,
+         "name":"all_tilesets",
+         "spacing":0,
+         "tilecount":3072,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
