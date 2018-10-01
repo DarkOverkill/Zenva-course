@@ -15,7 +15,7 @@
 906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
 906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
 906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
-906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
+963,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
 906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
 906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
 906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,906,
@@ -50,12 +50,15 @@
  </layer>
  <objectgroup name="objects">
   <properties>
-   <property name="tileset" value="map_tileset"/>
+   <property name="group" value="players"/>
+   <property name="texture" value="player_spritesheet"/>
+   <property name="walking_speed" type="int" value="50"/>
   </properties>
   <object id="10" name="player" type="player" x="0" y="224" width="32" height="32">
    <properties>
     <property name="group" value="players"/>
     <property name="texture" value="player_spritesheet"/>
+    <property name="walking_speed" type="int" value="50"/>
    </properties>
   </object>
  </objectgroup>
