@@ -33,5 +33,9 @@
         "group": "texts"
       }
     }
+  },
+  "user_input": {
+    "key": "title_user_input",
+    "path": "assets/user_inputs/title_user_input.json"
   }
 }

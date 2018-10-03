@@ -1,5 +1,6 @@
 import Prefab from '../prefabs/Prefab';
 import TextPrefab from '../prefabs/TextPrefab';
+import UserInput from '../plugins/UserInput';
 
 class JSONLevelScene extends Phaser.Scene {
   constructor(key) {
@@ -21,6 +22,10 @@ class JSONLevelScene extends Phaser.Scene {
       let sprite_data = this.level_data.sprites[sprite_name];
       let sprite = new this.prefab_classes[sprite_data.type](this, sprite_name, sprite_data.position, sprite_data.properties);
     }
+
+    this.user_input = new UserInput(this);
+    this.user_input_data = this.cache.json.get(this.level_data.user_input.key);
+    this.user_input.set_input(this.user_input_data);
   }
 
   update() {

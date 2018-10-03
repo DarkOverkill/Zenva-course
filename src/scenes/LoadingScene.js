@@ -31,6 +31,8 @@ class LoadingScene extends Phaser.Scene {
           break;
       }
     }
+
+    this.load.json(this.level_data.user_input.key, this.level_data.user_input.path);
   }
 
   create(data) {
