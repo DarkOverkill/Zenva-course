@@ -4,7 +4,8 @@ class BootScene extends Phaser.Scene {
 
     this.levels = {
       title: { key: 'TitleScene', path: 'assets/levels/title_screen.json' },
-      dungeon: { key: 'WorldScene', path: 'assets/levels/dungeon.json' }
+      dungeon: { key: 'WorldScene', path: 'assets/levels/dungeon.json' },
+      forest: { key: 'WorldScene', path: 'assets/levels/forest.json' }
     };
   }
 

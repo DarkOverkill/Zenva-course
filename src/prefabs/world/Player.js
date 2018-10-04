@@ -52,6 +52,7 @@ class Player extends Prefab {
   }
 
   update() {
+    if (!this.body) return;
     if(this.moving.left && this.body.velocity.x <= 1) {
       this.body.velocity.x = -this.walking_speed;
       this.anims.play('walking_left', true);

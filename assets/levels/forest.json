@@ -2,18 +2,18 @@
   "assets": {
     "map_tileset": {"type": "image", "source": "assets/images/tileset.png"},
     "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
-    "dungeon_level_tilemap": {"type": "tilemap", "source": "assets/maps/dungeon.json"}
+    "forest_level_tilemap": {"type": "tilemap", "source": "assets/maps/forest.json"}
   },
   "groups": [
     "doors",
     "players"
   ],
   "map": {
-    "key": "dungeon_level_tilemap",
+    "key": "forest_level_tilemap",
     "tilesets": ["map_tileset"]
   },
   "user_input": {
-    "key": "dungeon_user_input",
+    "key": "forest_user_input",
     "path": "assets/user_inputs/world_map_user_input.json"
   }
 }

@@ -67,26 +67,35 @@
                  "width":32,
                  "x":0,
                  "y":224
+                }, 
+                {
+                 "height":32,
+                 "id":12,
+                 "name":"door",
+                 "properties":
+                    {
+                     "group":"doors",
+                     "next_level":"forest"
+                    },
+                 "propertytypes":
+                    {
+                     "group":"string",
+                     "next_level":"string"
+                    },
+                 "rotation":0,
+                 "type":"door",
+                 "visible":true,
+                 "width":32,
+                 "x":43,
+                 "y":160
                 }],
          "opacity":1,
-         "properties":
-            {
-             "group":"players",
-             "texture":"player_spritesheet",
-             "walking_speed":50
-            },
-         "propertytypes":
-            {
-             "group":"string",
-             "texture":"string",
-             "walking_speed":"int"
-            },
          "type":"objectgroup",
          "visible":true,
          "x":0,
          "y":0
         }],
- "nextobjectid":12,
+ "nextobjectid":13,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.6",
